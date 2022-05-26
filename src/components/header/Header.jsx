@@ -1,8 +1,11 @@
 import React from 'react'
+import Botao from '../botao/Botao'
+import styles from './Header.modules.css'
+
 
 const Header = () => {
   return (
-    <header>
+    <header className='cabecalho'>
     <section>
         <div>
             <p>Uma seleção de produtos</p>
@@ -12,10 +15,18 @@ const Header = () => {
     </section>
     <nav>
         <ul>
-            <li>Conheça a Linx</li>
-            <li>Ajude o Algotítimo</li>
-            <li>Seus Produtos</li>
-            <li>Compartilhe</li>
+            <li>
+                <Botao texto='Conheça a Linx' />
+            </li>
+            <li> 
+                <Botao texto='Ajude o Algotítimo' />
+            </li>
+            <li>
+                <Botao texto='Seus Produtos' />
+            </li>
+            <li>
+                <Botao texto='Compartilhe' />
+            </li>
         </ul>
     </nav>
 </header>
